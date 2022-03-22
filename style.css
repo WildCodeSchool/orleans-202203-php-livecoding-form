@@ -1,0 +1,44 @@
+:root {
+    --primary: rgb(37, 37, 109);
+    --light: rgb(242, 242, 246);
+    --intermediate: rgb(133, 133, 133);
+}
+
+body {
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin:auto;
+}
+
+label, button {
+    margin-block-start: 8px;
+}
+
+button {
+    width: fit-content;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    color: var(--light);
+    font-size: 1.3rem;
+}
+
+input {
+    border: 1px solid var(--intermediate);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.3rem;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: brightness(80%);
+}
